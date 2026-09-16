@@ -3,9 +3,11 @@
   font-family: "Poppins", sans-serif;
   color: rgb(209, 119, 86);
 }
+
 .block {
   height: 100vh;
 }
+
 /* première section */
 #block1 {
   background-color: rgb(209, 119, 86);
@@ -60,11 +62,13 @@
   background-color: beige;
   display: flex;
 }
+
 #block2-text-wrap {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 #block2-title {
   padding: 5vh;
   margin-top: 15vh;
@@ -72,16 +76,19 @@
   width: 50%;
   align-items: center;
 }
+
 #block2-text {
   padding: 5vh;
   padding-top: 0;
   font-size: 1vw;
   width: 80%;
 }
+
 #block2-text span {
   font-weight: 700;
   font-style: italic;
 }
+
 #block2-img-wrap {
   display: flex;
   justify-content: center;
@@ -91,6 +98,7 @@
   margin: 10vh;
   padding: 5vh;
 }
+
 #block2-img {
   padding: 5vh;
   width: 100%;
@@ -103,6 +111,7 @@
   background-color: rgb(209, 119, 86);
   display: flex;
 }
+
 #block3-card-wrap {
   display: flex;
   justify-content: space-between;
@@ -112,6 +121,7 @@
   align-items: center;
   width: 100%;
 }
+
 .card {
   padding: 5vh;
   background-color: beige;
@@ -120,6 +130,7 @@
   border-radius: 10px;
 
 }
+
 .c-text {
   display: flex;
   flex-direction: column;
@@ -127,11 +138,13 @@
   width: 70%;
   font-size: 1.2vw;
 }
+
 .c-text h2 {
   font-size: 3vw;
   font-weight: 400;
   margin-bottom: 15vh;
 }
+
 .c-text h3 {
   margin-bottom: 5vh;
 }
