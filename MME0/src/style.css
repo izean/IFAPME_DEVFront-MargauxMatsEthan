@@ -148,3 +148,54 @@
 .c-text h3 {
   margin-bottom: 5vh;
 }
+
+/* Section 4*/
+#block4 {
+  background-color: beige;
+}
+
+#block4-title {
+  display:flex;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: 400;
+  padding: 10vh;
+}
+
+#block4-card-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5vw;
+  padding: 5vh;
+  align-items: center;
+}
+
+.personal-card {
+  width: 20vw;
+  text-decoration: none;
+}
+.personal-card:hover {
+  transform: scale(110%);
+  transition: transform 0.2s ease;
+}
+.pc-image-container {
+  width: 100%;
+}
+.pc-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.pc-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1vh;
+}
+.pc-text h3 {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 1vh;
+  text-transform: UPPERCASE;
+}
