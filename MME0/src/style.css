@@ -96,3 +96,42 @@
   width: 100%;
   object-fit: contain;
 }
+
+/* Section 3*/
+
+#block3 {
+  background-color: rgb(209, 119, 86);
+  display: flex;
+}
+#block3-card-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 15vw;
+  margin: 10vh;
+  padding: 5vh;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  padding: 5vh;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+.c-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 70%;
+  font-size: 1.2vw;
+}
+.c-text h2 {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-bottom: 15vh;
+}
+.c-text h3 {
+  margin-bottom: 5vh;
+}
