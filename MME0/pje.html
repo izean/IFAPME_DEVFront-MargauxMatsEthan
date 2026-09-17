@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan - Project Manager | MME Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css">
+    
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav>
+      <a href="index.html" class="brand">
+        <span class="brand-text">MME COLLECTIVE</span>
+        <span class="back-pill">← Main Site</span>
+      </a>
+      <ul>
+        <li><a href="#about">Vision</a></li>
+        <li><a href="#competencies">Skills</a></li>
+        <li><a href="#timeline">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- section hero -->
+    <header class="hero">
+      <div class="hero-content">
+        <span class="badge">Project Management Lead</span>
+        <h1 class="hero-title">Ethan <span>/</span> Orchestrating Product Delivery</h1>
+        <p class="hero-tagline">
+          Turning vision into organized execution. Syncing Margaux's creative UX designs with Mats's technical architecture.
+        </p>
+
+        <!-- Dynamic Stats Card -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">On-Time Sprint Rate</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Milestones Shipped</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Core Team Sync</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="profile-card-glow">
+          <img
+            src="public/pjmmme.png"
+            alt="Ethan Project Manager"
+            class="profile-img"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x600/D17756/beige?text=Ethan+Project+Manager';"
+          />
+        </div>
+        <div class="status-floating-tag">
+          <div class="pulse-dot"></div>
+          <span style="font-size: 0.85rem; font-weight: 700; color: #2e7d32;">Active Sprint: Finalizing Launch</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- section skill tab -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Leadership Style</span>
+        <h2 class="section-title">How I Drive Projects Forward</h2>
+      </div>
+
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="openTab(event, 'tab-agile')">Agile Coordination</button>
+          <button class="tab-btn" onclick="openTab(event, 'tab-communication')">Cross-Functional Sync</button>
+          <button class="tab-btn" onclick="openTab(event, 'tab-stack')">Tooling & Workflow</button>
+        </div>
+
+        <div id="tab-agile" class="tab-pane active">
+          <div class="tab-text">
+            <h3>Iterative & Predictable Sprints</h3>
+            <p>
+              I believe in flexible planning backed by transparent goals. By breaking down high-level project goals into manageable two-week sprints, the team stays focused, minimizes scope creep, and regularly ships functional features.
+            </p>
+            <p>
+              Daily micro-syncs keep blocker resolution fast and team friction minimal.
+            </p>
+          </div>
+          <div class="tab-graphic" style="background-color: var(--terracotta-light); padding: 2rem; border-radius: 12px; text-align: center;">
+            <p style="font-weight: 700; color: var(--terracotta-dark);">"Clear roadmaps empower designers and engineers to focus on craft rather than confusion."</p>
+          </div>
+        </div>
+
+        <div id="tab-communication" class="tab-pane">
+          <div class="tab-text">
+            <h3>Connecting Design & Engineering</h3>
+            <p>
+              My role is to act as the bridge between <strong>Margaux's UI/UX vision</strong> and <strong>Mats's software engineering execution</strong>.
+            </p>
+            <p>
+              I translate user journeys into clear technical tickets, ensuring that design mockups are realistic for engineering deadlines without losing aesthetic quality.
+            </p>
+          </div>
+          <div class="tab-graphic" style="background-color: var(--terracotta-light); padding: 2rem; border-radius: 12px; text-align: center;">
+            <p style="font-weight: 700; color: var(--terracotta-dark);">"Seamless communication reduces iteration cycles by 30%."</p>
+          </div>
+        </div>
+
+        <div id="tab-stack" class="tab-pane">
+          <div class="tab-text">
+            <h3>My Management Toolkit</h3>
+            <p>
+              Leveraging modern project management and collaboration software to keep asset pipelines organized and transparent across the board.
+            </p>
+            <div class="tool-pills">
+              <span class="tool-pill">Jira / Trello</span>
+              <span class="tool-pill">Notion Docs</span>
+              <span class="tool-pill">Figma Hand-off</span>
+              <span class="tool-pill">Gantt Roadmaps</span>
+              <span class="tool-pill">Git GitHub Boards</span>
+              <span class="tool-pill">Slack / Discord</span>
+            </div>
+          </div>
+          <div class="tab-graphic" style="background-color: var(--terracotta-light); padding: 2rem; border-radius: 12px; text-align: center;">
+            <p style="font-weight: 700; color: var(--terracotta-dark);">Organized systems lead to stress-free team deliverables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section competencies -->
+    <section id="competencies" class="section" style="background-color: rgba(209, 119, 86, 0.05);">
+      <div class="section-header">
+        <span class="section-subtitle">Core Strengths</span>
+        <h2 class="section-title">Project Management Competencies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <div class="skill-info">
+            <span>Sprint Planning & Backlog Grooming</span>
+            <span>95%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span>Risk Management & Mitigation</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span>Scope & Timeline Management</span>
+            <span>98%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 98%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <span>Design & Engineering Communication</span>
+            <span>92%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 92%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section timeline -->
+    <section id="timeline" class="section bg-terracotta">
+      <div class="section-header">
+        <span class="section-subtitle">Project Milestone Log</span>
+        <h2 class="section-title">MME Collective Platform Roadmap</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Phase 1 - Kickoff</div>
+            <h4>Scope Definition & Wireframing</h4>
+            <p>Aligned Margaux and Mats on project vision, core feature set, and target delivery schedule.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Phase 2 - Execution</div>
+            <h4>Sprint Cycles & Code Integration</h4>
+            <p>Managed asset delivery from design to front-end code, holding bi-weekly progress reviews.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Phase 3 - Quality Assurance</div>
+            <h4>Cross-Browser Testing & Polish</h4>
+            <p>Coordinated responsiveness testing, performance tweaks, and content refinements.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Phase 4 - Launch</div>
+            <h4>Final Deployment & Presentation</h4>
+            <p>Readying the portfolio platform for public showcase and client review.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact" class="section">
+      <div class="cta-card">
+        <div class="cta-text">
+          <h2>Ready to manage your next big project?</h2>
+          <p>Let's discuss roadmaps, team coordination, or prospective collaborations.</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="mailto:ethan@mmecollective.com" class="btn-primary">Get In Touch</a>
+          <a href="index.html#block4" class="btn-secondary">Meet the Rest of the Team</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© MME Collective — Designed & Managed by Margaux, Mats & Ethan</p>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
