@@ -27,7 +27,6 @@ body {
   justify-content: center;
 }
 
-
 #title span {
   color: beige;
   font-weight: 800;
@@ -280,9 +279,6 @@ body {
   background-color: beige;
 }
 
-
-
-
 /* Section 6*/
 #block6 {
   display: flex;
@@ -313,19 +309,12 @@ body {
   font-weight: 400;
   padding: 2vh;
   align-items: center;
-
 }
 #b6-text {
   font-size: 2vw;
   font-weight: 400;
   padding: 2vh;
 }
-
-
-
-
-
-
 
 #rb6 {
   width: 50%;
@@ -334,16 +323,24 @@ body {
   align-items: center;
 }
 
-
 .logo {
   width: 50vw;
   height: 25vw;
- 
+
   border-radius: 50%;
 }
 
 #b6-a {
   text-decoration: none;
+  color: beige;
+  background-color: rgb(209, 119, 86);
+  padding: 20px;
+  margin: 20px;
+  font-family: "Poppins";
+  font-size: 2vw;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
 }
 
 #b6-btn {
@@ -352,15 +349,13 @@ body {
   padding: 20px;
   margin: 20px;
   font-family: "Poppins";
-  font-size: 2vw;;
+  font-size: 2vw;
   font-weight: 700;
   border-radius: 5px;
   border-color: transparent;
-  
-
 }
 
 footer {
-  font-size : 1vw;
+  font-size: 1vw;
   padding: 2vh;
 }
