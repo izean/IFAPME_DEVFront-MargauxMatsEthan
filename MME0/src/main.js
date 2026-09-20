@@ -1,5 +1,5 @@
       function openTab(evt, tabName) {
-        var i, tabpane, tabbtns;
+        let i, tabpane, tabbtns;
         
         tabpane = document.getElementsByClassName("tab-pane");
         for (i = 0; i < tabpane.length; i++) {
