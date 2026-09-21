@@ -1,6 +1,4 @@
-/* ==========================================================================
-   MARGAUX - UI/UX DESIGNER (src/margaux.css)
-   ========================================================================== */
+
 
 :root {
   --primary: rgb(209, 119, 86);
@@ -29,7 +27,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Navigation Bar --- */
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -66,7 +64,7 @@ body {
   opacity: 0.8;
 }
 
-/* --- Section Présentation --- */
+/* section présentation */
 header {
   padding: 4rem 8%;
   background-color: var(--bg-beige);
@@ -120,7 +118,7 @@ header {
   margin-top: 0.5rem;
 }
 
-/* --- Section Skills (Corrigée et affinée) --- */
+/* section skills */
 .skills {
   padding: 4rem 8%;
   background-color: var(--bg-light);
@@ -135,7 +133,6 @@ header {
   color: var(--primary);
 }
 
-/* Suppression des cartes massives au profit de lignes épurées */
 .box {
   background-color: transparent;
   padding: 0.8rem 0;
@@ -147,7 +144,6 @@ header {
   gap: 1.5rem;
 }
 
-/* Correction du bloc beige parasite */
 .info.skills {
   background: none;
   padding: 0;
@@ -169,7 +165,7 @@ header {
   gap: 1rem;
 }
 
-/* Barres de progression */
+/* barres de progression */
 progress {
   width: 100%;
   height: 8px;
@@ -211,7 +207,7 @@ progress::-moz-progress-bar {
   font-style: italic;
 }
 
-/* --- Section Contact --- */
+/* section contact */
 .contact {
   padding: 4rem 8%;
   background-color: var(--primary);
@@ -258,7 +254,7 @@ progress::-moz-progress-bar {
   opacity: 0.9;
 }
 
-/* --- Footer --- */
+/* footer */
 footer {
   text-align: center;
   padding: 1.2rem;
@@ -267,7 +263,7 @@ footer {
   font-size: 0.85rem;
 }
 
-/* --- Responsive --- */
+/* responsive */
 @media (max-width: 600px) {
   .box {
     grid-template-columns: 1fr;
