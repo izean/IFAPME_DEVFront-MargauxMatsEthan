@@ -1,0 +1,215 @@
+
+html {
+    scroll-behavior : smooth;
+    scroll-snap-type: y mandatory;
+}
+* {
+    margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #3a2219;
+  background: rgb(209, 119, 86);
+  line-height: 1.6;
+}
+
+.block {
+    min-height: 100vh;
+    padding: 100px 6%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.block h2 {
+    font-size : 48px;
+    margin-bottom : 25px;
+}
+
+.block p {
+    font-size : 17px;
+}
+
+/* Block d'intro */
+
+.intro-block {
+
+    background : beige;
+}
+
+.intro-text {
+    width : 550px;
+}
+
+.intro-text .first-title {
+    display : inline-block;
+    margin-bottom : 15px;
+    font-size : 15px;
+    letter-spacing : 3px;
+    color : rgb(209, 119, 86);
+}
+
+.intro-text h1 {
+    margin : 0 0 20px;
+    font-size : 68px;
+    line-height : 0.95;
+    font-weight : 700;
+}
+
+.intro-text p {
+    width : 500px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Block 2*/
+
+.french-block {
+    display : grid;
+    color : #3a2219;
+    gap : 100px;
+    align-items: center;
+    grid-template-columns: 0.8fr 1.2fr;
+
+}
+
+.french-title p {
+    font-size : 14px;
+    font-weight : 700;
+    margin-bottom : 15px;
+    letter-spacing: 4px;
+}
+
+.french-title h2 {
+    font-size : 64px;
+    line-height : 0.9;
+    letter-spacing : 2px;
+}
+
+.french-text {
+    width : 700px;
+}
+
+.french-text h3 {
+    font-size : 32px;
+    margin-bottom : 25px;
+}
+.french-text p {
+    font-size : 16px;
+    margin-bottom : 25px;
+    line-height: 1.8;
+    
+}
+
+/* Block final */
+.time-block {
+    color : #3a2219;
+    background : beige;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time-block h2 {
+    margin-bottom : 10px;
+}
+
+.time-page {
+    width : 850px;
+    background : #211611;
+    color : beige;
+    margin : auto;
+    padding: 60px;
+    border: 2px solid #3a2219;
+    border-radius : 20px;
+    text-align: left;
+    box-shadow : 15px 15px 0 rgb(209, 119, 86);
+}
+
+.time-title {
+    font-size: 64px;
+}
+
+.time-error {
+    color : rgb(209, 119, 86);
+    font-size : 96px;
+    font-weight : bold;
+    line-height : 0.9;
+    margin-bottom : 40px;
+    text-align: center;
+}
+
+
+.time-text {
+    text-align: center;
+}
+
+
+.time-text h2 {
+    font-size : 36px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.time-text p {
+    color: beige;
+    margin-bottom: 35px;
+}
+
+.time-reason {
+    padding : 18px 20px;
+    background : #2a1c17;
+    color : rgb(209, 119, 86);
+    font-size : 14px;
+}
+
+footer {
+    padding: 2rem 8%;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: -90px;
+    color: #8c5b4b;
+    border-top: 1px solid rgba(209, 119, 86, 0.15);
+    }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background-color: rgba(209, 119, 86, 0.96);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: beige;
+    }
+
+    nav .brand-text {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    }
+
+    nav .back-pill {
+    background-color: rgba(245, 242, 235, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    }
