@@ -111,10 +111,15 @@
       }
       
       .presentation {
-         display: flex;
-          align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
-
+      .texte-presentation {
+        display: flex;
+        flex-direction:column;
+        gap: 2.5rem;
+      }
 
       .bonjour {
         font-size: 3.2rem;
@@ -124,31 +129,49 @@
         margin-bottom: 1rem;
       }
 
-      .job {
-        font-size: 1.25rem;
+      .bonjour span {
+        display: block;
+      }
+
+      .bonjour span:last-child {
+        margin-left: 3.5rem;
+      }
+               
+      .job-description {
+        font-size: 1.1rem;
         color: #724131;
         margin-bottom: 2rem;
         max-width: 600px;
       }
-      
-     
+
       .photo {
-        flex: 0.9;
+        width: 40%;
+        height: 600px;
         position: relative;
-        border-radius: 24px;
+        border-radius: 50%;
         padding: 12px;
         background: linear-gradient(145deg, var(--terracotta), var(--terracotta-dark));
         box-shadow: 0 20px 40px rgba(171, 84, 58, 0.25);
+        overflow: hidden;
+        align-self: right;
+        
       }
 
-    
-      .img {
-        width: 50%;
-        height: 100px;
+      .image {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        border-radius: 16px;
+        object-position: 0.5%;
+        transform: scale(1);
+        border-radius: 50%;
         display : block;
       }
+
+      .description {
+    
+        font-style: italic;
+      }
+
 
 
      /* section skills */ 
@@ -156,39 +179,79 @@
      .section {
         padding: 90px 8%;
       }
-
-      .skills {
+      .skills h4 {
         text-align: center;
         margin-bottom: 3.5rem;
-      }
-
-      .skills h4 {
         font-size: 2.4rem;
         color: var(--terracotta-dark);
         font-weight: 700;
       }
-
-      .box {
+      .info-skills {
+        text-align: left;
+        margin-left : 1rem;
+        font-weight: bold;
+      }
+       .box {
+        box-sizing: border-box;
+        width: 90%;
+        height: 70px;
         background-color: var(--white);
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        padding: 0.5rem;
+        border-radius: 7px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+        grid-template-columns: 200px 5fr;
       }
-      
-      .progress-bar {
-        width: 100%;
-        height: 10px;
-        background-color: var(--beige);
-        border-radius: 5px;
-        overflow: hidden;
+      .boxes {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
       }
-
+      .boxes-colonnes {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }  
       .fill {
         height: 100%;
         background: linear-gradient(90deg, var(--terracotta), var(--terracotta-dark));
         border-radius: 5px;
         transition: width 1s ease-in-out;
       }
+      .progress-bar {
+        width: 50%;
+        height: 10px;
+        background-color: var(--beige);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .progress-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .pourcentage {
+        min-width: 38px;
+        text-align: right;
+        font-size: 0.9rem;
+        color: var(--terracotta-dark);
+        font-weight: 600;
+        white-space: nowrap;
+  
+      }
+
+      .text-skills {
+        flex: 1;
+        padding-left: 2.5rem;
+        border-left: 10px solid var(--terracotta-light);
+        display: flex;
+        align-items: center;
+        text-align: right;
+        font-style: italic;
+      }
+
 
       /* Section contact */
       
