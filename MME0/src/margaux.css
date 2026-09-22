@@ -18,6 +18,23 @@
 
       html {
         scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+      }
+
+      section {
+        height: 100vh;           /* chaque section prend toute la hauteur de l'écran */
+        scroll-snap-align: start; /* le haut de la section s'aligne avec le haut de l'écran */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+      }
+
+      header {
+        height: 100vh;           
+        scroll-snap-align: start; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
       }
 
       body {
@@ -108,40 +125,39 @@
         display: flex;
         gap: 4rem;
         background: linear-gradient(135deg, var(--beige-light) 0%, #eee8dd 100%);
-      }
-      
-      .presentation {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
+
       .texte-presentation {
         display: flex;
         flex-direction:column;
-        gap: 2.5rem;
+        gap: 1.5rem;
       }
 
       .bonjour {
-        font-size: 3.2rem;
-        font-weight: 800;
+        font-size: 5rem;
+        font-weight: 700;
         line-height: 1.15;
         color: var(--terracotta-dark);
         margin-bottom: 1rem;
       }
 
-      .bonjour span {
+      .hi {
         display: block;
       }
 
-      .bonjour span:last-child {
+      .name {
         margin-left: 3.5rem;
       }
                
-      .job-description {
-        font-size: 1.1rem;
+      .job-name {
+        font-size: 2.2rem;
         color: #724131;
         margin-bottom: 2rem;
         max-width: 600px;
+        margin-left: 12rem;
       }
 
       .photo {
@@ -168,8 +184,9 @@
       }
 
       .description {
-    
+        font-size: 1.5rem;
         font-style: italic;
+        margin-left: 22rem;
       }
 
 
@@ -248,20 +265,81 @@
         border-left: 10px solid var(--terracotta-light);
         display: flex;
         align-items: center;
-        text-align: right;
+        justify-content: flex-end;
         font-style: italic;
+        margin-right: 5rem;
+      }
+
+      .text-skills p {
+        text-align: right;
+        font-size: 1.5rem;
+        font-style: italic;
+        max-width: 480px;
+        margin: 0;
       }
 
 
       /* Section contact */
       
+      .section {
+        padding: 90px 8%;
+      }
+
       .contact {
         background: linear-gradient(135deg, var(--terracotta-dark), #702f1d);
-        border-radius: 24px;
         padding: 4rem 3rem;
         color: var(--beige);
-        display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 2rem;
         box-shadow: 0 15px 35px rgba(171, 84, 58, 0.3);
+      }
+
+      .contact h4 {
+        font-size: 2.4rem;
+        color: var(--beige);
+        font-weight: 700;
+        margin-top: 0.5rem;
+      }
+
+      .contact-buttons {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 3rem;
+      }
+
+      .contact-button {
+        background-color: rgba(255, 255, 255, 0.12); /* fond clair subtil au repos */
+        border: none;
+        border-radius: 50%;
+        width: 76px;
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .contact-button svg {
+        width: 35px;
+        height: 35px;
+        fill: var(--beige);
+        transition: fill 0.25s ease;
+      }
+
+      .contact-button:hover {
+        background-color: var(--beige);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+      }
+
+      .contact-button:hover svg {
+        fill: var(--terracotta-dark);
+      }
+
+      .contact-button:focus-visible {
+        outline: 2px solid var(--beige);
+        outline-offset: 3px;
       }
