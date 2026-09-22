@@ -31,5 +31,5 @@ Les illustrations du site ainsi que la rédaction de ce fichier README ont été
 
 Le projet est hébergé et accessible directement en ligne aux adresses suivantes :
 
-- Lien de la démo : 
+- Lien de la démo : https://izean.github.io/IFAPME_DEVFront-MargauxMatsEthan/MME0/margaux.html
 - Lien du dépôt : https://github.com/izean/IFAPME_DEVFront-MargauxMatsEthan.git
